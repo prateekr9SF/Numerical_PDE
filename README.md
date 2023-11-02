@@ -1,16 +1,16 @@
-# Poisson Equation Solver
+# Poisson's Equation Solver
 
-This repository contains a Python script for solving the Poisson equation using the finite difference method.
+This repository contains a Python script for solving the Poisson's equation numerically.
 
 ## Description
 
-The Poisson equation is an  elliptic partial differential equation of the form:
+The Poisson's equation is an  elliptic partial differential equation of the form:
 
 <p align="center">
     $\nabla^2u=f$
 </p>
 
-In this framework, we solve the Poisson equation in a 2D domain using the finite difference method. Rewriting the Poissons equation yields:
+In this framework, we solve the Poisson equation in a 2D domain using the finite difference method. Rewriting the Poisson's equation yields:
 
 <p align="center">
     $\frac{\partial ^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2} = f(x,y)$,
