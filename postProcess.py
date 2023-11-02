@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import FormatStrFormatter
 
-def plotsurf(u, X, Y):
+def plotPoissons(u, X, Y):
     # Plot solution
     F = plt.gcf()
     Size = F.get_size_inches()
@@ -48,3 +48,14 @@ def plotsurf(u, X, Y):
     plt.rcParams['savefig.dpi'] = 300
 
     plt.show()
+
+
+def plotLaplace(u, X, Y):
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    surf = ax.plot_surface(X, Y, u, cmap='viridis')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('Surface Plot of u')
+    plt.colorbar(surf)
+    plt.show()    
