@@ -19,14 +19,12 @@ In this framework, we solve the Poisson equation in a 2D domain using the finite
 where the partial derivatives are computed using the second-order finite differnece method.
 
 <p align="center">
-   $\[\frac{u_{i+1,j} - 2u_{i,j} + u_{i-1,j}}{\Delta x^2} + \frac{u_{i,j+1} - 2u_{i,j} + u_{i,j-1}}{\Delta y^2} = f_{i,j}\]$
+   $\frac{u_{i+1,j} - 2u_{i,j} + u_{i-1,j}}{\Delta x^2} + \frac{u_{i,j+1} - 2u_{i,j} + u_{i,j-1}}{\Delta y^2} = f_{i,j}$
+</p>
+And the rearranged equation to solve for $(u_{i,j})$:
 
-And the rearranged equation to solve for $\(u_{i,j}\)$:
-
-$\[
-u_{i,j} = \frac{\Delta x^2 \Delta y^2 f_{i,j} + \Delta y^2 (u_{i-1,j} + u_{i+1,j}) + \Delta x^2 (u_{i,j-1} + u_{i,j+1})}{2(\Delta x^2 + \Delta y^2)}
-\]$
-
+<p align="center">
+$u_{i,j} = \frac{\Delta x^2 \Delta y^2 f_{i,j} + \Delta y^2 (u_{i-1,j} + u_{i+1,j}) + \Delta x^2 (u_{i,j-1} + u_{i,j+1})}{2(\Delta x^2 + \Delta y^2)}$
 </p>
 
 
