@@ -34,7 +34,7 @@ def plotsurf(u, X, Y):
     cbar = F.colorbar(surf)
     cbar_ticks = np.linspace(contour_min, contour_max, 5)
     cbar.set_ticks(cbar_ticks)
-    cbar.ax.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))  # Set format for ticks
+    cbar.ax.yaxis.set_major_formatter(FormatStrFormatter('%.4f'))  # Set format for ticks
     cbar.set_label('u', rotation=90, labelpad=15)
     cbar.ax.tick_params(labelsize=18)  # Set font size for ticks
 
