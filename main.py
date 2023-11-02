@@ -3,7 +3,7 @@ from postProcess import *
 from solver import *
 import time
 
-print("SOLVINF POISSONS EQUATION IN TWO DIMENSIONS USING FINITE DIFFERENCES \n")
+print("SOLVING POISSONS EQUATION IN TWO DIMENSIONS USING FINITE DIFFERENCES \n")
 
 ## COMPUTATIONAL DOMAIN DEFINITION
 nx, ny = 100, 100  # number of points in x and y directions
