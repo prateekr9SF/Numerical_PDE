@@ -3,6 +3,8 @@ from postProcess import *
 from solver import *
 import time
 
+print("SOLVING POISSONS EQUATION IN TWO DIMENSIONS USING FINITE DIFFERENCES \n")
+
 ## COMPUTATIONAL DOMAIN DEFINITION
 nx, ny = 100, 100  # number of points in x and y directions
 dx = 1.0 / (nx - 1)  # grid spacing in the x direction

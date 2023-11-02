@@ -35,12 +35,12 @@ def plotPoissons(u, X, Y):
     cbar_ticks = np.linspace(contour_min, contour_max, 5)
     cbar.set_ticks(cbar_ticks)
     cbar.ax.yaxis.set_major_formatter(FormatStrFormatter('%.4f'))  # Set format for ticks
-    cbar.set_label('u', rotation=90, labelpad=15)
+    cbar.set_label('u', rotation=0, labelpad=15)
     cbar.ax.tick_params(labelsize=18)  # Set font size for ticks
 
     ax.set_xlabel('x', fontsize=20,fontname = "Times New Roman", fontweight="normal")
     ax.set_ylabel('y', fontsize=20,fontname = "Times New Roman", fontweight="normal")
-    cbar.set_label('u', rotation=270, labelpad=15, fontdict={'family': 'Times New Roman', 'size': 20})  # Set font type and size for label
+    cbar.set_label('u', rotation=90, labelpad=15, fontdict={'family': 'Times New Roman', 'size': 20})  # Set font type and size for label
 
     #ax.zaxis.set_ticks([])  # Remove z-axis ticks
 
