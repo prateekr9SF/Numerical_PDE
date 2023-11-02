@@ -6,7 +6,7 @@ This repository contains a Python script for solving the Poisson equation using 
 
 The Poisson equation is a partial differential equation of the form:
 
-\nabla^2u=f
+$\nabla^2u=f$
 
 In this script, we solve the Poisson equation in a 2D domain using the finite difference method.
 
