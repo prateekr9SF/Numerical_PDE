@@ -1,0 +1,28 @@
+#----------------------------------FEATURE: ERROR ANALYSIS BEGINS------------------------------#
+
+# Define the analytical solution function
+def analytical_solution(X, Y):
+    return np.sin(np.pi * X) * np.sin(np.pi * Y) / (2 * np.pi**2)
+
+
+
+# Solve the problem analtically
+u_exact = analytical_solution(X, Y)
+
+# Calculate error
+error = np.abs(u - u_exact)
+
+
+# Calculate error metrics
+max_error = np.max(error)
+mean_absolute_error = np.mean(error)
+root_mean_square_error = np.sqrt(np.mean(error**2))
+
+# Display error metrics
+print(f"Max Error: {max_error}")
+print(f"Mean Absolute Error: {mean_absolute_error}")
+print(f"Root Mean Square Error: {root_mean_square_error}")
+
+
+#----------------------------------ERROR ANALYSIS ENDS-------------------------------------#
+

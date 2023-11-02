@@ -2,6 +2,7 @@ import numpy as np
 from postProcess import *
 from solver import *
 
+
 ## COMPUTATIONAL DOMAIN DEFINITION
 nx, ny = 100, 100  # number of points in x and y directions
 dx = 1.0 / (nx - 1)  # grid spacing in the x direction
@@ -16,7 +17,7 @@ X, Y = np.meshgrid(x, y)
 f = np.sin(np.pi * X) * np.sin(np.pi * Y)
 
 # Define size
-size = 100
+size = 200
 
 
 # Initialize solution array
