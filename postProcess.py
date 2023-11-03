@@ -47,7 +47,7 @@ def plotPoissons(u, X, Y):
     plt.rcParams['figure.dpi'] = 300
     plt.rcParams['savefig.dpi'] = 300
 
-    plt.show()
+    plt.savefig("field.png") 
 
 
 def plotLaplace(u, X, Y):
@@ -58,4 +58,4 @@ def plotLaplace(u, X, Y):
     plt.ylabel('y')
     plt.title('Surface Plot of u')
     plt.colorbar(surf)
-    plt.show()    
+    plt.savefig("field.png")    
